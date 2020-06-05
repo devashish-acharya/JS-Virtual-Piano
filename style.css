@@ -1,0 +1,42 @@
+
+#container {
+    position: absolute;
+    height: 300px;
+    border: 2rem solid rgb(139, 199, 226);
+    top:calc(50% - 150px);
+    align-items: center;
+    margin-left: 5%;
+    overflow:hidden;
+}
+.whitenote{
+    height: 100%;
+    width: 75px;
+    background: white;
+    float:left;
+    border:3px solid rgb(139, 199, 226); 
+    position: relative;
+    text-align: end;
+}
+.blacknote{
+    position: absolute;
+    height: 65%;
+    width: 55%;
+    z-index: 1;
+    background: black;
+    left: 70%;
+    color:white
+}
+
+button{
+    position: absolute;
+    z-index: 10
+}
+#noteVisual {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 90%;
+    background-color: rgba(128, 128, 128, 0.192);
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
