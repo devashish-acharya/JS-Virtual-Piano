@@ -1,75 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>JS Virtual Piano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.3/Tone.js"
         integrity="sha256-gwEgFj2Yx+wnP3UYnNvehHiD+88xT0kPwA8vu0tD1Fk=" crossorigin="anonymous"></script>
-    <title>
-        JS Virtual Piano
-    </title>
-    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div id="container">
-    <div>
-        <progress id="volume" value="0"></progress>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id= "brand" class="navbar-brand" href="#">Virtual Piano</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button type="button" class="btn btn-dark btn-lg" onclick="start()" id="firstButton">PolySynth</button></li>
+                    <li><button type="button" class="btn btn-dark btn-lg" onclick="amsSynth()" id="secondButton">AmsSynth</button></li>
+                    <li><button type="button" class="btn btn-dark btn-lg" onclick="fmsSynth()" id="thirdButton">FmsSynth</button></li>
+                    <li><button type="button" class="btn btn-dark btn-lg" onclick="membraneSynth()" id="fourthButton">MembraneSynth</button></li>
+                    <li><button type="button" class="btn btn-dark btn-lg" onclick="metalSynth()" id="fifthButton">MetalSynth</button></li>
+                    <li><button type="button" class="btn btn-dark btn-lg" onclick="monoSynth()" id="sixthButton">MonoSynth</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+            <div id="pianoTop">
+            <p>More Music More Happiness</p>
+            </div>
+            <div id="container">
+                    
+                <div data-note="C4" class="whitenote" id="q">
+                    <div id="noteVisual">Q</div>
+                    <div data-note="C#4" class="blacknote" id="2">2</div>
+                </div>
+                <div data-note="D4" class="whitenote" id="w">
+                    <div id="noteVisual">W</div>
+                    <div data-note="D#4" class="blacknote" id="3">3</div>
+                </div>
+                <div data-note="E4" class="whitenote" id="e">
+                    <div id="noteVisual">E</div>
+                </div>
+                <div data-note="F4" class="whitenote" id="r">
+                    <div id="noteVisual">R</div>
+                    <div data-note="F#4" class="blacknote" id="5">5</div>
+                </div>
+                <div data-note="G4" class="whitenote" id="t">
+                    <div id="noteVisual">T</div>
+                    <div data-note="G#4" class="blacknote" id="6">6</div>
+                </div>
+                <div data-note="A4" class="whitenote" id="y">
+                    <div id="noteVisual">Y</div>
+                    <div data-note="A#4" class="blacknote" id="7">7</div>
+                </div>
+                <div data-note="B4" class="whitenote" id="u">
+                    <div id="noteVisual">U</div>
+                </div>
+                <div data-note="C5" class="whitenote" id="i">
+                    <div id="noteVisual">I</div>
+                    <div data-note="C#5" class="blacknote" id="9">9</div>
+                </div>
+                <div data-note="D5" class="whitenote" id="o">
+                    <div id="noteVisual">O</div>
+                    <div data-note="D#5" class="blacknote" id="0">0</div>
+                </div>
+                <div data-note="E5" class="whitenote" id="p">
+                    <div id="noteVisual">P</div>
+                </div>
+                <div data-note="F5" class="whitenote" id="z">
+                    <div id="noteVisual">Z</div>
+                    <div data-note="F#5" class="blacknote" id="s">S</div>
+                </div>
+                <div data-note="G5" class="whitenote" id="x">
+                    <div id="noteVisual">X</div>
+                    <div data-note="G#5" class="blacknote" id="d">D</div>
+                </div>
+                <div data-note="A5" class="whitenote" id="c">
+                    <div id="noteVisual">C</div>
+                    <div data-note="A#5" class="blacknote" id="f">F</div>
+                </div>
+                <div data-note="B5" class="whitenote" id="v">
+                    <div id="noteVisual">V</div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Second Container -->
+    <div id="mar" class="container-fluid bg-2 text-center">
+        <h3 class="margin"></h3>
+        
+        <p>You can select your instrument style at the top of the page.</p>
+        <br>
+        <p>Remember to remove CapsLock.</p>
     </div>
-        <div class="whitenote" id="q">
-            <div id = "noteVisual">q</div>
-            <div class="blacknote" id="2">2</div>
-        </div>
-        <div class="whitenote" id="w">
-            <div id = "noteVisual">w</div>
-            <div class="blacknote" id="3">2</div>
-        </div>
-        <div class="whitenote" id="e">
-            <div id = "noteVisual">e</div>
-        </div>
-        <div class="whitenote" id="r">
-            <div id = "noteVisual">r</div>
-            <div class="blacknote" id="5">5</div>
-        </div>
-        <div class="whitenote" id="t">
-            <div id = "noteVisual">t</div>
-            <div class="blacknote" id="6">6</div>
-        </div>
-        <div class="whitenote" id="y">
-            <div id = "noteVisual">y</div>
-            <div class="blacknote" id="7">7</div>
-        </div>
-        <div class="whitenote" id="u">
-            <div id = "noteVisual">u</div>
-        </div>
-        <div class="whitenote" id="i">
-            <div id = "noteVisual">i</div>
-            <div class="blacknote" id="9">9</div>
-        </div>
-        <div class="whitenote" id="o">
-            <div id = "noteVisual">o</div>
-            <div class="blacknote" id="0">0</div>
-        </div>
-        <div class="whitenote" id="p">
-            <div id = "noteVisual">p</div>
-        </div>
-        <div class="whitenote" id="z">
-            <div id = "noteVisual">z</div>
-            <div class="blacknote" id="s">s</div>
-        </div>
-        <div class="whitenote" id="x">
-            <div id = "noteVisual">x</div>
-            <div class="blacknote" id="d">d</div>
-        </div>
-        <div class="whitenote" id="c">
-            <div id = "noteVisual">c</div>
-            <div class="blacknote" id="f">f</div>
-        </div>
-        <div class="whitenote" id="v">
-            <div id = "noteVisual">v</div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+        <h2 id="bot" class="margin">Made by Devashish Acharya using Tone.js</h2><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a id="botBot"  href="https://github.com/devashish-acharya" target="_blank" class="btn btn-dark">My Github Page</a>
+                <a href="https://github.com/devashish-acharya" target="_blank" >
+                <img src="images\github154769640.png" id="gitImg" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a id="botBot" href="https://www.instagram.com/thedev96/" target="_blank" class="btn btn-dark">My Instagram Page</a>
+                <a href="https://www.instagram.com/thedev96/">
+                <img src="images\instagram1675670640.png" target="_blank" id="gitImg" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a id="botBot" href="https://devashish-acharya.github.io/" target="_blank" class="btn btn-dark">My Portfolio</a>
+                <a href="https://devashish-acharya.github.io/" target="_blank">
+                <img  src="images\male1354358.png"  id="gitImg" alt="Image">
+                </a>
+            </div>
         </div>
     </div>
-    <button onclick="start()" id=firstButton>start</button>
-    <script src="script.js"></script>
+     <script src="start.js"></script>
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p>© 2020 Devashish Acharya</a></p>
+    </footer>
+
 </body>
 
 </html>
