@@ -53,11 +53,17 @@ document.addEventListener('keyup', onRelease)
 //Mouse Click Function
 const container = document.getElementById("container");
 
+
 container.addEventListener("mousedown", e => {
     const note = e.target.dataset.note
     synth.triggerAttackRelease(note, "16n");
-    
-  });
+    document.getElementById(e.target.id).style.backgroundColor="brown";
+    setTimeout(()=> {
+        const note = e.target.dataset.note.length;
+        let color = note === 2 ? "white" : "black";
+        document.getElementById(e.target.id).style.backgroundColor= color;
+    }, 100)
+    });
 
 
 //Changing Instruement Type Functions   
