@@ -41,22 +41,19 @@ p {font-size: 1.8rem;}
 #container {
   position: absolute;
   left: 50%;
-  margin-left: -65.9rem;
-  width: 131.8rem;
+  margin-left: -65.24rem;
+  width: 130.48rem;
   height: 30rem;
-  border: 0.614rem solid rgb(0, 0, 0);
+  border: 1rem solid rgb(19, 3, 3);
   top: 16%;
   align-items: center;
   overflow:hidden;
   background-color:rgb(22, 9, 9) ;
-  padding-top: 0.62480rem;
-  padding-left: 0.62480rem;
-  padding-right: 0.4rem;
 }
 .whitenote{
   height: 100%;
-  width: 7.6rem;
-  border-radius:0rem 0rem 0.6rem 0.6rem;
+  width: 7.5575rem;
+  border-radius:0rem 0rem 1rem 1rem;
   box-shadow: 0rem 0.6rem 0.6rem rgb(104, 103, 103);
   border-right: none;
   cursor: pointer;
@@ -81,7 +78,7 @@ p {font-size: 1.8rem;}
   text-align: center;
 }
 
-#noteVisual {
+.noteVisual {
   position: absolute;
   height: 10%;
   width: 100%;
@@ -136,7 +133,7 @@ button{
 }
 
 #bot{
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
 }
 
