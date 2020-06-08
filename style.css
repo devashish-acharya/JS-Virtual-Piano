@@ -39,9 +39,10 @@ p {font-size: 1.8rem;}
 
 
 #container {
-  position: relative;
-  margin: auto;
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -65.9rem;
+  width: 131.8rem;
   height: 30rem;
   border: 0.614rem solid rgb(0, 0, 0);
   top: 16%;
@@ -121,10 +122,12 @@ button{
 
 #pianoTop{
   position: absolute;
+  width: 135rem;
   font-size: 2rem;
   z-index: 5;
   bottom: 85%;
-  left: 39%;
+  left: 50%;
+  margin-left: -67.5rem;
   color: white;
 }
 

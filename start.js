@@ -25,7 +25,12 @@ var notes = {
     d: "G#5",
     c: "A5",
     f: "A#5",
-    v: "B5"
+    v: "B5",
+    b: "C6",
+    h: "C#6",
+    n: "D6",
+    j: "D#6",
+    m: "E6"
 }
 
 //Key Press Function
@@ -51,7 +56,7 @@ const container = document.getElementById("container");
 container.addEventListener("mousedown", e => {
     const note = e.target.dataset.note
     synth.triggerAttackRelease(note, "16n");
-    document.getElementById("whitenote").style.backgroundColor="brown";
+    
   });
 
 
