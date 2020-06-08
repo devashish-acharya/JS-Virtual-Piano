@@ -1,19 +1,19 @@
 body {
-  font: 0.52cm Montserrat, sans-serif;
+  font: 1.5rem Montserrat, sans-serif;
   line-height: 1.8;
   position: relative;
 }
-p {font-size: 0.423cm;}
-.margin {margin-bottom: 45px;}
+p {font-size: 1.8rem;}
+.margin {margin-bottom: 7rem;}
 .bg-1 { 
-  height: 8.46cm;
+  height: 30rem;
   background-color: rgb(63, 8, 8); /* dark red/maroon */
   color: #ffffff;
 }
 .bg-2 { 
   background-color: #252424; /* dark grey */
   color: #ffffff;
-  height: 6.0854cm;
+  height: 25rem;
 }
 .bg-3 { 
   background-color: #ffffff; /* White */
@@ -24,43 +24,44 @@ p {font-size: 0.423cm;}
   color: #fff;
 }
 .container-fluid {
-  padding-top: 1.85cm;
-  padding-bottom: 1.85cm;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .navbar {
-  padding-top: 0.396875cm;
-  padding-bottom: 0.396cm;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 0.3175;
-  letter-spacing: 0.13cm;
+  font-size: 1rem;
+  letter-spacing: 0.6rem; 
 }
 
 
 #container {
-  position: absolute;
-  height: 7.9375cm;
-  border: 0.26cm solid rgb(0, 0, 0);
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 30rem;
+  border: 0.614rem solid rgb(0, 0, 0);
   top: 16%;
-  left: 10.5%;
   align-items: center;
   overflow:hidden;
   background-color:rgb(22, 9, 9) ;
-  padding-top: 0.2645cm;
-  padding-left: 0.2645cm;
-  padding-right: 0.2645cm;
+  padding-top: 0.62480rem;
+  padding-left: 0.62480rem;
+  padding-right: 0.4rem;
 }
 .whitenote{
   height: 100%;
-  width: 1.984375cm;
-  border-radius:0cm 0cm 0.13229cm 0.13229cm;
-  box-shadow: 0cm 0.13229cm 0.13229cm rgb(104, 103, 103);
+  width: 7.6rem;
+  border-radius:0rem 0rem 0.6rem 0.6rem;
+  box-shadow: 0rem 0.6rem 0.6rem rgb(104, 103, 103);
   border-right: none;
   cursor: pointer;
   background: white;
   float:left;
-  border: 0.02645cm solid black; 
+  border: 0.06rem solid black; 
   border-bottom: none;
   position: relative;
   text-align: end;
@@ -69,8 +70,8 @@ p {font-size: 0.423cm;}
   position: absolute;
   height: 60%;
   width: 55%;
-  border-radius: 0cm 0cm 0.2645cm 0.2645cm;
-  box-shadow: 0cm 0.211cm 0.3175cm #666;
+  border-radius: 0rem 0rem 0.6rem 0.6rem;
+  box-shadow: 0rem 0.6rem 0.6rem #666;
   z-index: 1;
   background: black;
   left: 70%;
@@ -90,12 +91,12 @@ p {font-size: 0.423cm;}
   font-weight: bolder;
 }
 #gitImg{
-  size: 0.79375cm
+  size: 1rem;
 }
 
 button{
   background-color: #302f2f;
-  border: 0.13229 solid black;
+  border: 0.6rem solid rgb(0, 0, 0)65, 64, 64);
   cursor: pointer;
   color: white;
 }
@@ -104,43 +105,43 @@ button{
   font-family: 'Tangerine', serif;
   position: relative;
   color: black;
-  font-size: 1.3229166667cm;
+  font-size: 5rem;
   font-weight: bold;
 }
 #gitImg{
-  height: 1.5875cm;
-  width: 1.5875cm;
+  height: 4rem;
+  width: 4rem;
 }
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open>.dropdown-toggle.btn-dark {
   color: #fff;
     background-color: rgb(214, 93, 93);
-    border: 0.0529cm solid brown;
+    border: 0.01rem solid brown;
     border-color: #285e8e; 
 }
 
 #pianoTop{
   position: absolute;
-  font-size: 0.79375cm;
+  font-size: 2rem;
   z-index: 5;
   bottom: 85%;
-  left: 42%;
+  left: 39%;
   color: white;
 }
 
 #mar{
-  font-size: 0.52916cm;
+  font-size: 2rem;
 }
 
 #bot{
-  font-size: 0.79375cm;
+  font-size: 3rem;
   color: black;
 }
 
 #botBot{
-  height:1.0583cm;
-  width:5.2916666667cm;
+  height: 4.5rem;
+  width:20rem;
   background-color: #302f2f;
-  border: 5px solid black;
+  border: 0.5rem solid black;
   cursor: pointer;
   color: white;
 }
