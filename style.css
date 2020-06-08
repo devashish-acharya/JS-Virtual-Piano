@@ -1,66 +1,66 @@
 body {
-  font: 20px Montserrat, sans-serif;
+  font: 0.52cm Montserrat, sans-serif;
   line-height: 1.8;
   position: relative;
 }
-p {font-size: 16px;}
+p {font-size: 0.423cm;}
 .margin {margin-bottom: 45px;}
 .bg-1 { 
-  height: 320px;
-  background-color: rgb(63, 8, 8); /* Green */
+  height: 8.46cm;
+  background-color: rgb(63, 8, 8); /* dark red/maroon */
   color: #ffffff;
 }
 .bg-2 { 
-  background-color: #252424; /* Dark Blue */
+  background-color: #252424; /* dark grey */
   color: #ffffff;
-  height: 230px
+  height: 6.0854cm;
 }
 .bg-3 { 
   background-color: #ffffff; /* White */
   color: #555555;
 }
 .bg-4 { 
-  background-color: #2f2f2f; /* Black Gray */
+  background-color: #2f2f2f; /* dark Gray */
   color: #fff;
 }
 .container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 1.85cm;
+  padding-bottom: 1.85cm;
 }
 .navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 0.396875cm;
+  padding-bottom: 0.396cm;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 12px;
-  letter-spacing: 5px;
+  font-size: 0.3175;
+  letter-spacing: 0.13cm;
 }
 
 
 #container {
   position: absolute;
-  height: 300px;
-  border: 10px solid rgb(0, 0, 0);
+  height: 7.9375cm;
+  border: 0.26cm solid rgb(0, 0, 0);
   top: 16%;
   left: 10.5%;
   align-items: center;
   overflow:hidden;
   background-color:rgb(22, 9, 9) ;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 0.2645cm;
+  padding-left: 0.2645cm;
+  padding-right: 0.2645cm;
 }
 .whitenote{
   height: 100%;
-  width: 75px;
-  border-radius:0px 0px 5px 5px;
-  box-shadow: 0px 5px 5px rgb(104, 103, 103);
+  width: 1.984375cm;
+  border-radius:0cm 0cm 0.13229cm 0.13229cm;
+  box-shadow: 0cm 0.13229cm 0.13229cm rgb(104, 103, 103);
   border-right: none;
   cursor: pointer;
   background: white;
   float:left;
-  border: 1px solid black; 
+  border: 0.02645cm solid black; 
   border-bottom: none;
   position: relative;
   text-align: end;
@@ -69,8 +69,8 @@ p {font-size: 16px;}
   position: absolute;
   height: 60%;
   width: 55%;
-  border-radius: 0px 0px 10px 10px;
-  box-shadow: 0px 8px 12px #666;
+  border-radius: 0cm 0cm 0.2645cm 0.2645cm;
+  box-shadow: 0cm 0.211cm 0.3175cm #666;
   z-index: 1;
   background: black;
   left: 70%;
@@ -90,12 +90,12 @@ p {font-size: 16px;}
   font-weight: bolder;
 }
 #gitImg{
-  size: 30px
+  size: 0.79375cm
 }
 
 button{
   background-color: #302f2f;
-  border: 5px solid black;
+  border: 0.13229 solid black;
   cursor: pointer;
   color: white;
 }
@@ -104,24 +104,23 @@ button{
   font-family: 'Tangerine', serif;
   position: relative;
   color: black;
-  font-size: 50px;
+  font-size: 1.3229166667cm;
   font-weight: bold;
-
 }
 #gitImg{
-  height: 60px;
-  width: 60px;
+  height: 1.5875cm;
+  width: 1.5875cm;
 }
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open>.dropdown-toggle.btn-dark {
   color: #fff;
     background-color: rgb(214, 93, 93);
-    border: 2px solid brown;
+    border: 0.0529cm solid brown;
     border-color: #285e8e; 
 }
 
 #pianoTop{
   position: absolute;
-  font-size: 30px;
+  font-size: 0.79375cm;
   z-index: 5;
   bottom: 85%;
   left: 42%;
@@ -129,17 +128,17 @@ button{
 }
 
 #mar{
-  font-size: 20px;
+  font-size: 0.52916cm;
 }
 
 #bot{
-  font-size: 30px;
+  font-size: 0.79375cm;
   color: black;
 }
 
 #botBot{
-  height:40px;
-  width:200px;
+  height:1.0583cm;
+  width:5.2916666667cm;
   background-color: #302f2f;
   border: 5px solid black;
   cursor: pointer;
