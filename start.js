@@ -1,5 +1,8 @@
 let synth = new Tone.PolySynth().toMaster();
 
+
+
+
 //musical sounds
 var notes = {
     q: "C4",
@@ -33,6 +36,9 @@ var notes = {
     m: "E6"
 }
 
+
+
+
 //Key Press Function
 function onKeypress(event) {
     console.log(event.key);
@@ -50,9 +56,11 @@ function onRelease(event) {
 document.addEventListener('keypress', onKeypress)
 document.addEventListener('keyup', onRelease)
 
+
+
+
 //Mouse Click Function
 const container = document.getElementById("container");
-
 
 container.addEventListener("mousedown", e => {
     const note = e.target.dataset.note
@@ -66,6 +74,9 @@ container.addEventListener("mousedown", e => {
 });
 
 
+
+
+//Quotes
 let text = ["“To play a wrong note is insignificant; to play without passion is inexcusable!” - Ludwig van Beethoven", "“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato", "“One good thing about music, when it hits you, you feel no pain.” ― Bob Marley", "“Where words fail, music speaks.” ― Hans Christian Andersen", "“How is it that music can, without words, evoke our laughter, our fears, our highest aspirations?” ― Jane Swan", "“Music is … A higher revelation than all Wisdom & Philosophy” ― Ludwig van Beethoven", "“Music touches us emotionally, where words alone can’t.” ― Johnny Depp", "“Life seems to go on without effort when I am filled with music.” ― George Eliot", "“If music be the food of love, play on.” ― William Shakespeare", "“If I cannot fly, let me sing.” ― Stephen Sondheim","“Music is the language of our hearts, the language that spreads love and peace in our world” ― My Dad", "“To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?” ― Michael Jackson", "“It’s like if the music is loud enough I won’t be able to listen to my own thoughts. ” ― Nic Sheff", "“Most people die with their music still locked up inside them.” ― Benjamin Disraeli", "“If Music is a Place — then Jazz is the City, Folk is the Wilderness, Rock is the Road, Classical is a Temple.” ― Vera Nazarian", "“Music is the divine way to tell beautiful, poetic things to the heart..” ― Pablo Casals", "“Music can change the world because it can change people.” ― Bono"];
 let counter = 0;
 let elem = document.getElementById("bot");
@@ -79,6 +90,7 @@ function change() {
         // clearInterval(inst); - to stop repeat
     }
 }
+
 
 
 
