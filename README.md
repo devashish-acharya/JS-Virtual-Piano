@@ -1,12 +1,12 @@
 ## Hello and welcome to my virtual piano.
  - Here is a link to the actual page [Virtual Piano](https://devashish-acharya.github.io/JS-Virtual-Piano/)
 ## Firstly, here are some pictures showing my project.
-![The piano](readmeScreenshots\Screenshot1.png)
+![The piano](readmeScreenshots/Screenshot1.png)
 ### As you can see above, they piano is available for you to play with your PC's keyboard. There are some instructions.
 * Make sure your CapsLock is turned off.
 * You can select a snyth type above by clicking the button.
 * Remember to have fun!
-![The Quotes](readmeScreenshots\Screenshot2.png)
+![The Quotes](readmeScreenshots/Screenshot2.png)
 ### Picutre above shows some musical quotes by famous people that changes over time. Just a bit of inspiration.
 The sound is created using tone.js
 - You can find them at [Tone.js](https://tonejs.github.io/).

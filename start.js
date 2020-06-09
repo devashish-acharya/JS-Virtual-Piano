@@ -2,7 +2,6 @@ let synth = new Tone.PolySynth().toMaster();
 
 
 
-
 //musical sounds
 var notes = {
     q: "C4",
