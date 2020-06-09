@@ -1,6 +1,6 @@
 ## Hello and welcome to my virtual piano.
  - Here is a link to the actual page [Virtual Piano](https://devashish-acharya.github.io/JS-Virtual-Piano/)
- 
+
 ## Firstly, here are some pictures showing my project.
 ![The piano](readmeScreenshots/Screenshot1.png)
 
@@ -36,9 +36,10 @@ daily coding practice and education plus learning about soft skills reuqired to 
                     <div class="noteVisual">W</div>
                     <div data-note="D#4" class="blacknote" id="3">3</div>
                 </div>......
+                
+ ### And so on... This was then styled in CSS
 
 
-- And so on... This was then styled in CSS
 ![css code](readmeScreenshots/screenshot3.png)
 
 
