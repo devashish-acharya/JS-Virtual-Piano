@@ -13,7 +13,10 @@
 ### Picutre above shows some musical quotes by famous people that changes over time. Just a bit of inspiration.
 The sound is created using tone.js
 - You can find them at [Tone.js](https://tonejs.github.io/).
-- you can download their library at [download Link](https://cdnjs.com/libraries/tone).
+- You can get their cdn at [download Link](https://cdnjs.com/libraries/tone).
+The quote type effect is created using typewriter.js
+- You can find them at [typerwriter.js](https://github.com/tameemsafi/typewriterjs)
+- You can get their cdn at [cdn](https://www.npmjs.com/package/typewriter-effect)
 ## You can run this project by cloning the repo 
 -This project was made as a part of the Tech Talent Accelerator provided by Generation UK. The course consisted of 
 daily coding practice and education plus learning about soft skills reuqired to be a good developer. I started this course 6 weeks ago with no knowledge on JavaScript or CSS and some basic knowledge on HTML and will be leaving with great knew skills and knowledge and contacts with some great people!
